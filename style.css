@@ -1,0 +1,280 @@
+body{
+    background-color: #f3b9b9;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+    
+
+h1 {
+    color: #F7F7F7;
+    font-size: 5.625rem;
+    font-family: 'Volkhov', serif;
+    text-align: center;
+}
+
+h2 {
+    color: #F7F7F7;
+    font-family: 'Volkhov', serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+ }
+
+h3{
+    color: #F7F7F7;
+    font-family: 'Volkhov', serif;
+ }
+
+ .title-text h1{
+    margin: 40px auto 0 auto;
+    padding-bottom: 30px;
+ }
+
+ .title-text h2{
+    padding-bottom: 40px;
+ }
+
+ .get-in-touch{
+    padding-bottom: 26px;
+ }
+
+ p {
+    line-height: 2;
+  }
+
+ a:link{
+    text-decoration: none;
+  
+ }
+
+.top-container {
+    position: relative;
+    padding-top: 100px;
+  }
+
+.intro {
+    width: 32%;
+    margin: auto;
+  }
+
+  .intro a {
+    color: #EAF6F6;
+  }
+
+.profile {
+    margin: 100px 0;
+}
+
+.profile img{
+    padding-top: 250px;
+    padding-bottom: 40px;
+}
+
+.top-balloon {
+    position: absolute;
+    right: 300px;
+    top: 30px;
+  }
+  
+.bottom-balloon {
+    position: absolute;
+    left: 270px;
+
+}
+
+.contact-message{
+    width: 40%;
+    margin: 40px auto 60px;
+  }
+
+footer{
+    padding: 50px 0 20px;
+    text-align: center;
+    color: #EAF6F6;
+}
+
+footer a{
+    text-decoration: none;
+    color: #EAF6F6;
+    cursor: pointer;
+}
+
+.copyright {
+    color: #EAF6F6;
+    padding: 20px 0;
+    display: inline;
+  }
+
+/* contact button */
+
+.button {
+    background-color: #F7F7F7;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    color: lightcoral;
+    box-shadow: 0 0.4rem #f3b9b9;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+   }
+   
+.button:active {
+    color: white;
+    box-shadow: 0 0.2rem #f3b9b9;
+    transform: translateY(0.2rem);
+ }
+   
+.button:hover:not(:disabled) {
+    background: lightcoral;
+    color: white;
+    text-shadow: 0 0.1rem #f3b9b9;
+ }
+   
+.button:disabled {
+    cursor: auto;
+    color: #f3b9b9;
+ }
+
+/* Navigation Bar */
+  .navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.2rem;
+  }
+  
+  .nav-item {
+    padding: 0 18px;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+  }
+
+  .container-fluid{
+    padding: 2% 10%;
+  } 
+
+/* resume.html style */
+.resume-body{
+    text-align: left;
+    margin:20px 15%;
+}
+
+.resume-body p{
+    margin-right: 4%;
+}
+
+.resume-contact{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.resume-contact a{
+    text-decoration: none;
+    color:#EAF6F6;
+}
+
+.resume-contact a:hover{
+   color: lightcoral;
+}
+
+.academic-project a{
+    text-decoration: none;
+    color:#EAF6F6;
+}
+
+.academic-project a:hover{
+    color: lightcoral;
+ }
+
+.flex-item{
+    padding-left: 20px;
+}
+
+
+/* courses.html style */
+
+.container form{
+    width: 91%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container form input{
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    background-color: #f3b9b9;
+}
+
+.container form i{
+    padding-left: 10px;
+}
+
+.course-list{
+    padding: 20px 0;
+}
+
+.course{
+    display: flex;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+.course img{
+    width: 70px;
+    height:70px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.c-details{
+    padding-left: 15px;
+}
+
+.course .c-details h2{
+    font-size: 20px;
+}
+
+.course .c-details h3{
+    font-size: 18px;
+}
+
+.container{
+    text-align: left;
+    margin: 0% 10%;
+}
+
+.container h2,h3{
+    font-weight: bold;
+}
+
+.container p{
+    margin-right: 20%;
+}
+
+.filters{
+    padding-bottom: 10px;
+}
+
+.read-more-btn{
+    color:#F7F7F7;
+}
+
+.read-more-text{
+    display: none;
+}
+
+.read-more-text--show{
+    display: inline;
+}
+
+.course-h1{
+    padding-bottom: 10px;
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <!-- CSS Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Ubuntu:wght@400;700&family=Volkhov:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <!-- Navbar -->
+   <header>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+        
+          <a class="navbar-brand" href="">CW</a>
+    
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="courses.html">Courses</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <h1 class="course-h1">Courses</h1>
+
+    <section class="container">
+
+      <!-- Filter by level -->
+         <div class="filters">
+            <label for="level-filter">Filter by level:</label>
+            <select id="level-filter">
+              <option value="all">All</option>
+              <option value="Level 01">Level 01</option>
+              <option value="Level 02">Level 02</option>
+            </select>
+
+            <!-- Sort by level from lowest to highest and vice versa -->
+               <lable for="select">Sort level by</lable>
+               <select name="" id="select">
+                  <option id="LowToHigh">Low to high</option>
+                  <option id="HighToLow">High to low</option>
+               </select>
+            </div>
+
+          <!-- Search bar -->
+         <form class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" name="" id="search-item" placeholder="Search courses" onkeyup="search()">
+         </form>
+     
+
+         <!-- Course list -->
+         <div class="course-list" id="course-list">
+   
+            <div class="course">
+               <img src="images/essentials.png" alt="Computer Essentials">
+               <div class="c-details">
+                  <h2>CST8101 Computer Essentials</h2>
+                  <h3>Level 01</h3>
+                  <p>The essentials of computer software, hardware, and laptop management form the foundation for building further
+                     technical programming skills. Learn to configure your laptop environment, basic PC and troubleshoot problems. 
+                     <br><span class="read-more-text">Students create backups, install virus protection, and manage files through a basic understanding of the Windows Operating System.
+                        Students also install and configure the Windows Operating System, and a virtual machine environment and explore computer organization 
+                        including basic numerical systems, functional hardware and software components needed to run programs</span>
+                        <span class="read-more-btn">Read More...</span></p>
+              </div>
+            </div>
+            
+            <div class="course">
+               <img src="images/java1.png" alt="Introduction to Computer Programming">
+               <div class="c-details">
+                  <h2>CST8116 Introduction to Computer Programming</h2>
+                  <h3>Level 01</h3>
+                  <p>Possessing the fundamentals of logic, problem-solving and programming language structure provides a solid foundation for further study 
+                     in the field. Students develop introductory knowledge of computer programming with <br><span class="read-more-text">emphasis on problem analysis and design, using 
+                     algorithms, pseudocode, flowcharts, UML Class Diagrams and testing, with the Java programming language used as a means to implement problem 
+                        solution designs. Through an introduction to the Java programming language students use sequential structures, selection structures, 
+                        repetition structures, variables, constants, methods, constructors, one-dimensional arrays, object-oriented programming, classes, objects,
+                        abstraction, encapsulation, inputs, outputs, coding conventions and documentation.
+                        Theory is reinforced with application by means of practical laboratory assessments.</span>
+                        <span class="read-more-btn">Read More...</span></p>
+               </div>
+            </div>
+   
+            <div class="course">
+               <img src="images/database1.png" alt="Introduction to Database">
+               <div class="c-details">
+                  <h2>CST8215 Introduction to Database</h2>
+                  <h3>Level 01</h3>
+                  <p>Databases are used to store data and are a core component of many information technology systems. Students learn the fundamentals of
+                     relational databases design using Entity Relation Diagrams (ERDs), and use Structured Query Language <span class="read-more-text">(SQL) to create, modify and 
+                     query a database. Students design and create databases that are maintainable, secure and adaptable to change in business requirements, using 
+                        normalization. Students become familiar with the functions of a Database Management System (DBMS) and its components in comparison with 
+                        legacy systems and alternative information storage mechanisms.</span>
+                        <span class="read-more-btn">Read More...</span></p>
+               </div>
+            </div>
+   
+            <div class="course">
+               <img src="images/success.png" alt="Achieving Success in Changing Environments">
+               <div class="c-details">
+                  <h2>CST8300 Achieving Success in Changing Environments</h2>
+                  <h3>Level 01</h3>
+                  <p>Rapid changes in technology have created personal and employment choices that challenge each of us to find our place as contributing
+                     citizens in the emerging society. Life in the 21st century presents significant opportunities, but it also <span class="read-more-text">creates potential hazards and
+                     ethical problems that demand responsible solutions. Students explore the possibilities ahead, assess their own aptitudes and strengths, 
+                     and apply critical thinking and decision-making tools to help resolve some of the important issues in our complex society with its
+                     competing interests.</span>
+                     <span class="read-more-btn">Read More...</span></p>
+               </div>
+            </div>
+   
+            <div class="course">
+               <img src="images/communication1.png" alt="Communications I">
+               <div class="c-details">
+                  <h2>ENL1813T Communications I</h2>
+                  <h3>Level 01</h3>
+                  <p>Communication remains an essential skill sought by employers, regardless of discipline or field of study. Using a practical, 
+                     vocation-oriented approach, students focus on meeting the requirements of effective communication. Through a <br><span class="read-more-text">combination of lectures,
+                     exercises, and independent learning, students practise writing, speaking, reading, listening, locating and documenting information and
+                     using technology to communicate professionally. Students develop and strengthen communication skills that contribute to success in both 
+                     educational and workplace environments.</span>
+                     <span class="read-more-btn">Read More...</span></p>
+               </div>
+            </div>
+   
+            <div class="course">
+               <img src="images/maths.png" alt="MAT8001C Technical Mathematics for Computer Science">
+               <div class="c-details">
+                  <h2>MAT8001C Technical Mathematics for Computer Science</h2>
+                  <h3>Level 01</h3>
+                  <p>The study of algebraic and transcendental functions is an essential prerequisite to Calculus. Students manipulate algebraic expressions,
+                     solve algebraic equations and linear systems and learn the properties of and graph algebraic and <span class="read-more-text">transcendental functions. Students
+                     investigate computer number systems in addition to Boolean algebra and logic to help solve problems involving computer systems. Students 
+                     also study the addition and subtraction of vectors using vector components. Delivered in a modular format, this course is equivalent to
+                     the completion of all of the following math modules MAT8100 - A, B, C, D, E, F, and L.</span>
+                     <span class="read-more-btn">Read More...</span></p>
+               </div>    
+            </div>
+   
+            <div class="course">
+               <img src="images/database2.png" alt="Database Systems">
+               <div class="c-details">
+                  <h2>CST2355 Database Systems</h2>
+                  <h3>Level 02</h3>
+                  <p>Database systems can automate data processing tasks as well as tie into the security of information technology systems. Students acquire
+                     practical experience using market-leading object-relational database management systems like Oracle <span class="read-more-text">and MySQL. Students 
+                     obtain hands-on experience with advanced engineering modeling tools along with SQL, SQL scripts and programming with Oracle's PL/SQL blocks. Database
+                     concepts covered include advanced SQL, case structures, rollup and cube operations, metadata manipulation, data storage and retrieval,
+                     security and transaction control and data warehousing</span>
+                     <span class="read-more-btn">Read More...</span></p>
+               </div>
+            </div>
+   
+            <div class="course">
+               <img src="images/linux.png" alt="Operating System Fundamentals (GNU/Linux)">
+               <div class="c-details">
+                  <h2>CST8102 Operating System Fundamentals (GNU/Linux)</h2>
+                  <h3>Level 02</h3>
+                  <p>Operating systems form the backbone of information technology systems coordinating the interaction between hardware and software. 
+                     Students explore the basic concepts and components of Operating Systems (OS), and how they <span class="read-more-text">function and interact with hardware and 
+                     software components. Students examine the details of operating system structures, process management, storage management, installation,
+                     configuration, and administration both in theory and through practical assignments based on the GNU/Linux operating system. 
+                     Lab work is designed to implement the theory by developing skills using the powerful GNU/Linux command-line tools and utilities.</span>
+                     <span class="read-more-btn">Read More...</span></p>    
+               </div> 
+            </div>
+   
+            <div class="course">
+               <img src="images/java2.png" alt="Object Oriented Programming (Java)">
+               <div class="c-details">
+                  <h2>CST8284 Object Oriented Programming (Java)</h2>
+                  <h3>Level 02</h3>
+                  <p>Working in the field of information technology as a programmer requires a firm understanding of Object-Oriented Programming (OOP) concepts.
+                     Students explore object-oriented programming methodology using the Java <br><span class="read-more-text">programming language. Object oriented concepts, 
+                     such as encapsulation, inheritance, abstraction and polymorphism are covered and reinforced with practical applications. 
+                     Students explore the basics of data structures and algorithms as well as basic Graphical User Interface (GUI) programming.</span>
+                     <span class="read-more-btn">Read More...</span></p>   
+               </div>
+            </div>
+   
+            <div class="course">
+               <img src="images/web.png" alt="Web Programming">
+               <div class="c-details">
+                  <h2>CST8285 Web Programming</h2>
+                  <h3>Level 02</h3>
+                  <p>The World Wide Web (WWW) has become an integrated part of everyday life. Students develop basic skills of web programming, website design 
+                     and implementation. JavaScript, HTML5, and PHP are used to explore web-based <br><span class="read-more-text">solutions to problems of increasing 
+                     interactivity and complexity. Lectures are reinforced by practical assignments that encourage students to construct and maintain their own websites. </span>
+                     <span class="read-more-btn">Read More...</span></p>
+               </div>
+            </div>
+   
+            <div class="course">
+               <img src="images/communication2.png" alt="Technical Communication for Engineering Technologies">
+               <div class="c-details">
+                  <h2>ENL2019T Technical Communication for Engineering Technologies</h2>
+                  <h3>Level 02</h3>
+                  <p>The ability to communicate effectively in a technically-oriented interdisciplinary workplace is a foundational skill in an 
+                     innovation-driven economy. Students are exposed to exercises and assignments designed to foster independent and <span class="read-more-text">collaborative 
+                     critical thinking, research, writing, visual communication and presentation skills related to technical topics.</span>
+                     <span class="read-more-btn">Read More...</span></p>
+               </div>
+            </div>
+            
+            <div class="course">
+               <img src="images/job.png" alt="Cooperative Education Readiness">
+               <div class="c-details">
+               <h2>GEP1001 Cooperative Education Readiness</h2>
+               <h3>Level 02</h3>
+               <p>Students are guided through a series of activities that prepare them to conduct a professional job search and succeed in the workplace. 
+                  Through a detailed orientation students learn the cooperative education program policies and <br><span class="read-more-text">procedures related to searching and 
+                 securing a work term opportunity. Students identify their strengths and transferable skills and participate in workshop-style sessions 
+                  that focus on cover letter and resume development, interview techniques and job search strategies. Students learn how to navigate 
+                  a web-based resource centre, which is used to post employment and cooperative education job opportunities. Students reflect
+                  on workplace success, ethics and responsibilities.</span>
+                  <span class="read-more-btn">Read More...</span></p>
+               </div>
+          </div>
+       </section>   
+    
+    <!-- Footer -->
+   <footer>
+      <a href="index.html">Home · </a>
+      <a href="resume.html">Resume · </a>
+      <a href="courses.html">Courses · </a>
+      <p class="copyright">© 2023 Chen Wu</p>
+   </footer>    
+
+   <script src="script.js" defer></script>
+</body>
+</html>
