@@ -1,3 +1,5 @@
+/* Author: Chen Wu */
+
 body{
     background-color: #f3b9b9;
     font-family: 'Montserrat', sans-serif;
@@ -43,7 +45,6 @@ h3{
 
  a:link{
     text-decoration: none;
-  
  }
 
 .top-container {
@@ -58,6 +59,10 @@ h3{
 
   .intro a {
     color: #EAF6F6;
+  }
+
+  .intro a:hover {
+    color: lightcoral;
   }
 
 .profile {
@@ -160,11 +165,7 @@ footer a{
 /* resume.html style */
 .resume-body{
     text-align: left;
-    margin:20px 15%;
-}
-
-.resume-body p{
-    margin-right: 4%;
+    margin:20px 7%;
 }
 
 .resume-contact{
@@ -195,6 +196,11 @@ footer a{
     padding-left: 20px;
 }
 
+.op{
+    padding-right: 10%;
+}
+
+
 
 /* courses.html style */
 
@@ -204,6 +210,10 @@ footer a{
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.search-course{
+    padding-top: 10px;
 }
 
 .container form input{
