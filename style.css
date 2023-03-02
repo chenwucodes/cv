@@ -200,6 +200,19 @@ footer a{
     padding-right: 10%;
 }
 
+.project1, .project2{
+    height: 130px;
+    width: 190px;
+}
+
+.project-name{
+    padding-top: 10px;
+}
+
+.fab {
+    color:#EAF6F6;
+    padding-right: 15px;
+  }
 
 
 /* courses.html style */
